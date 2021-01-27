@@ -1,0 +1,51 @@
+Objects:
+Users
+Cumulative Scores
+Turn Scores
+
+Key-Value Pairs:
+GAME (Address Book)
+User: id
+
+
+USERS (Contact)
+Name: userName
+Score: cumulativeScore
+ID: id
+
+Functions:
+addUser -triggered by a submit
+roll -triggered by click
+hold -triggered by click
+score -triggered by hold function execution or by roll === 1
+win -triggered by a user cumulativeScore >= 100
+newGame -triggered by a click
+switchPlayers -triggered by score function execution
+
+function pig(){
+    let tempScore;
+if (tempScore != 1 && they hold){ 
+if (tempScore = 1) {
+    return false
+}
+
+cumulativeScore = tempScore + this.cumulativeScore
+}
+
+Things to dynamically display:
+userNames
+userScores
+rollResult
+
+Things to have on the page upon load:
+Form for entering userName
+Output divs:
+  User1
+  User2
+  Game(i.e: rollResult, winner)
+Buttons:
+  Submit userName
+  roll
+  hold
+  new game
+  ??switchPlayers??
