@@ -39,6 +39,10 @@ Expect: (new Game()).toEqual(new game instance)
 Test-2: "It will create a prototype to be called on Game objects to add an id property"
 Expect: (game.assignId).toEqual(game = {id: 1};)
 
+Describe: User;
+Test-1: "It will create an object to serve as a blueprint for creating a user instances"
+Expect: (new User(FreddieMercury))toEqual(newPlayer = {Name: "FreddieMercury"; Score = 0;})
+
 ## Known Bugs
 
 * _This is a work in progress and not yet functional_

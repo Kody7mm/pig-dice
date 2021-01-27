@@ -1,4 +1,5 @@
 Objects:
+Games
 Users
 Cumulative Scores
 Turn Scores
@@ -54,12 +55,16 @@ Buttons:
 
 Specifications:
 
-Describe: Games(); 
+Describe: Games; 
 Test: "It will create an object to serve as a blueprint for creating game instances"
-Expect: (new Game()).toEqual(new game instance)
+Expect: (new Game()).toEqual(newGame = {users: {…}, currentId: 0})
 
 Test-2: "It will create a prototype to be called on Game objects to add an id property"
 Expect: (game.assignId).toEqual(game = {id: 1};)
+
+Describe: User;
+Test-1: "It will create an object to serve as a blueprint for creating a user instances"
+Expect: (new User(FreddieMercury))toEqual(newPlayer = {Name: "FreddieMercury"; Score = 0;})
 
 Test: "
 
