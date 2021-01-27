@@ -32,8 +32,9 @@ _Alternatively,_
 
 ## Tests
 
-
-
+Describe: Games(); 
+Test: "It will create an object to serve as a blueprint for creating game instances"
+Expect: (new Game()).toEqual(new game instance)
 
 ## Known Bugs
 
