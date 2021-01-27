@@ -33,8 +33,11 @@ _Alternatively,_
 ## Tests
 
 Describe: Games(); 
-Test: "It will create an object to serve as a blueprint for creating game instances"
+Test-1: "It will create an object to serve as a blueprint for creating game instances"
 Expect: (new Game()).toEqual(new game instance)
+
+Test-2: "It will create a prototype to be called on Game objects to add an id property"
+Expect: (game.assignId).toEqual(game = {id: 1};)
 
 ## Known Bugs
 
