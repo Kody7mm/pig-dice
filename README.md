@@ -50,7 +50,8 @@ Expect: (new User(FreddieMercury))toEqual(newPlayer = {Name: "FreddieMercury"; S
 Test-2: "It will create an object to serve as a blueprint for adding consecutive roll() results together"
 Expect: (newGame.users[1].tally()).toEqual(53)
 
-Test-3: "It will create an object to serve as a blueprint for adding turnScore to gameScore
+Test-3: "It will create an object to serve as a blueprint for adding turnScore to gameScore"
+Expect: (newGame.users[1].hold()).toEqual(78)
 
 Describe: roll();
 Test-1: "It will generate a random number between 1 and 6"

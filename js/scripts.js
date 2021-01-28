@@ -35,6 +35,13 @@ User.prototype.tally = function() {
   return this.turnScore;
 };
 
+User.prototype.hold = function() {
+  this.gameScore = this.gameScore + this.turnScore;
+  this.turnScore = 0;
+  return this.gameScore, this.turnScore;
+}
+
+
 // newUser.tally();
 
 //Business Logic for pig-dice game
