@@ -41,7 +41,7 @@ Expect: (game.assignId).toEqual(game = {id: 1};)
 
 Test-3: "It will create a prototype to be called on a Game object to assign to the key-value pair (users: User)"
 Expect: (newGame.addUser(newPlayer)).toEqual(undefined)
-Expect: (newGame.users[1]).toEqual(User {userName: "FreddieMercury", cumulativeScore: 0, id: 1})
+Expect: (newGame.users[1]).toEqual(User {userName: "FreddieMercury", gameScore: 0, id: 1})
 
 Describe: User;
 Test-1: "It will create an object to serve as a blueprint for creating a user instances"
@@ -49,6 +49,8 @@ Expect: (new User(FreddieMercury))toEqual(newPlayer = {Name: "FreddieMercury"; S
 
 Test-2: "It will create an object to serve as a blueprint for adding consecutive roll() results together"
 Expect: (newGame.users[1].tally()).toEqual(53)
+
+Test-3: "It will create an object to serve as a blueprint for adding turnScore to gameScore
 
 Describe: roll();
 Test-1: "It will generate a random number between 1 and 6"

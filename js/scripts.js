@@ -17,22 +17,22 @@ Games.prototype.addUser = function(user) {
 
 function User(userName) {
   this.userName = userName;
-  this.cumulativeScore = 0;
+  this.gameScore = 0;
   this.turnScore = 0;
 }
 
 // roll();
-// let newUser = new User
-// let turnScore = 0
+// let newUser = new User;
+// let turnScore = 0;
 
 User.prototype.tally = function() {
   let randomNumber = roll();
   if (randomNumber === 1) {
-    this.turnScore = 0
+    this.turnScore = 0;
   } else {
-    this.turnScore = this.turnScore + randomNumber
+    this.turnScore = this.turnScore + randomNumber;
   }
-  return this.turnScore
+  return this.turnScore;
 };
 
 // newUser.tally();
