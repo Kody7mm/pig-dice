@@ -21,6 +21,21 @@ function User(userName) {
 }
 
 //Business Logic for pig-dice game
-function roll () {
+function roll() {
   return Math.floor((Math.random() * 6) + 1);
 };
+
+function tally() {
+  let randoCalrissian = roll();
+  let totalScore;
+  if (randoCalrissian = 1) {
+    totalscore = 0
+  } else {
+    toltalscore + randoCalrissian
+  }
+  return totalScore
+}
+
+// $(document).ready(function{
+//   let randoCalrissian = roll();
+// })
