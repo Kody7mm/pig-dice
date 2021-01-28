@@ -77,3 +77,12 @@ Expect: (newGame.users[1].tally()).toEqual(53)
 Describe: roll();
 Test-1: "It will generate a random number between 1 and 6"
 Expect: (roll()).toEqual(4)
+
+
+
+Game
+users
+  p1
+  p2
+Tally
+roll

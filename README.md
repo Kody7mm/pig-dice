@@ -40,20 +40,26 @@ Test-2: "It will create a prototype to be called on Game objects to add an id pr
 Expect: (game.assignId).toEqual(game = {id: 1};)
 
 Test-3: "It will create a prototype to be called on a Game object to assign to the key-value pair (users: User)"
-Expect: (newGame.addUser(newPlayer)).toEqual(undefined)
-Expect: (newGame.users[1]).toEqual(User {userName: "FreddieMercury", gameScore: 0, id: 1})
+Expect: (game.addUser(newPlayer)).toEqual(undefined)
+Expect: (game.users[1]).toEqual(User {userName: "FreddieMercury", gameScore: 0, id: 1})
+
+Test-4: "It will amend methods to be shared by all Games instances for incrementing round property value"
+Expect: (game.users[2].tally();).toEqual(game = {round: +1})
+Expect: (game.users[2].hold();).toEqual(game = {round: +1})
+
+Test-5: "It will determine which player's score to increase based off of the current round number"
+Expect: (game.switchPlayers())toEqual(round: odd number; playerOne.gameScore: 8)
+Expect: (game.switchPlayers())toEqual(round: even number; playerTwo.gameScore: 25)
 
 Describe: User;
 Test-1: "It will create an object to serve as a blueprint for creating a user instances"
 Expect: (new User(FreddieMercury))toEqual(newPlayer = {Name: "FreddieMercury"; Score = 0;})
 
 Test-2: "It will create a method to be shared by all User instances for adding consecutive roll() results together"
-Expect: (newGame.users[1].tally()).toEqual(53)
+Expect: (game.users[1].tally()).toEqual(53)
 
 Test-3: "It will create a method to be shared by all User instances for adding turnScore to gameScore"
-Expect: (newGame.users[1].hold()).toEqual(78)
-
-Test-4: "
+Expect: (game.users[1].hold()).toEqual(78)
 
 Describe: roll();
 Test-1: "It will generate a random number between 1 and 6"
