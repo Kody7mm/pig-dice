@@ -47,11 +47,13 @@ Describe: User;
 Test-1: "It will create an object to serve as a blueprint for creating a user instances"
 Expect: (new User(FreddieMercury))toEqual(newPlayer = {Name: "FreddieMercury"; Score = 0;})
 
-Test-2: "It will create an object to serve as a blueprint for adding consecutive roll() results together"
+Test-2: "It will create a method to be shared by all User instances for adding consecutive roll() results together"
 Expect: (newGame.users[1].tally()).toEqual(53)
 
-Test-3: "It will create an object to serve as a blueprint for adding turnScore to gameScore"
+Test-3: "It will create a method to be shared by all User instances for adding turnScore to gameScore"
 Expect: (newGame.users[1].hold()).toEqual(78)
+
+Test-4: "
 
 Describe: roll();
 Test-1: "It will generate a random number between 1 and 6"
