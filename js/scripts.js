@@ -19,3 +19,8 @@ function User(userName) {
   this.userName = userName;
   this.cumulativeScore = 0;
 }
+
+//Business Logic for pig-dice game
+function roll () {
+  return Math.floor((Math.random() * 6) + 1);
+};

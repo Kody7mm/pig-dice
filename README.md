@@ -47,6 +47,10 @@ Describe: User;
 Test-1: "It will create an object to serve as a blueprint for creating a user instances"
 Expect: (new User(FreddieMercury))toEqual(newPlayer = {Name: "FreddieMercury"; Score = 0;})
 
+Describe: roll();
+Test-1: "It will generate a random number between 1 and 6"
+Expect: (roll()).toEqual(4)
+
 ## Known Bugs
 
 * _This is a work in progress and not yet functional_
