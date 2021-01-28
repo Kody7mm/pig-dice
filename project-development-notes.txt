@@ -7,6 +7,7 @@ Turn Scores
 Key-Value Pairs:
 GAME (Address Book)
 User: id
+?Current Player?
 
 
 USERS (Contact)
@@ -70,17 +71,9 @@ Describe: User;
 Test-1: "It will create an object to serve as a blueprint for creating a user instances"
 Expect: (new User(FreddieMercury)).toEqual(newPlayer = {Name: "FreddieMercury"; Score = 0;})
 
+Test-2: "It will create an object to serve as a blueprint for adding consecutive roll() results together"
+Expect: (newGame.users[1].tally()).toEqual(53)
+
 Describe: roll();
 Test-1: "It will generate a random number between 1 and 6"
 Expect: (roll()).toEqual(4)
-
-Describe: tally();
-Test-1: "it will add consecutive roll() results together"
-Expect: (result(value)+result(value)).toEqual(randoTotal)
-Test: "
-
-
-
-  Objects ()
-
-  Objects.prototype.addUser

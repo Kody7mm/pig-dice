@@ -18,24 +18,26 @@ Games.prototype.addUser = function(user) {
 function User(userName) {
   this.userName = userName;
   this.cumulativeScore = 0;
+  this.turnScore = 0;
 }
+
+// roll();
+// let newUser = new User
+// let turnScore = 0
+
+User.prototype.tally = function() {
+  let randomNumber = roll();
+  if (randomNumber === 1) {
+    this.turnScore = 0
+  } else {
+    this.turnScore = this.turnScore + randomNumber
+  }
+  return this.turnScore
+};
+
+// newUser.tally();
 
 //Business Logic for pig-dice game
 function roll() {
   return Math.floor((Math.random() * 6) + 1);
 };
-
-function tally() {
-  let randoCalrissian = roll();
-  let totalScore;
-  if (randoCalrissian = 1) {
-    totalscore = 0
-  } else {
-    toltalscore + randoCalrissian
-  }
-  return totalScore
-}
-
-// $(document).ready(function{
-//   let randoCalrissian = roll();
-// })

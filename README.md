@@ -4,7 +4,7 @@
 
 #### _A web-based application for two users to play the game pig-dice._
 
-#### By _**Morgan Bradford and Jessica R. Williams**_
+#### By _**Morgan Bradford, Kody Gordon, and Jessica R. Williams**_
 
 ## Technologies Used
 
@@ -47,6 +47,9 @@ Describe: User;
 Test-1: "It will create an object to serve as a blueprint for creating a user instances"
 Expect: (new User(FreddieMercury))toEqual(newPlayer = {Name: "FreddieMercury"; Score = 0;})
 
+Test-2: "It will create an object to serve as a blueprint for adding consecutive roll() results together"
+Expect: (newGame.users[1].tally()).toEqual(53)
+
 Describe: roll();
 Test-1: "It will generate a random number between 1 and 6"
 Expect: (roll()).toEqual(4)
@@ -61,4 +64,5 @@ Copyright (c) **_2021 Morgan Bradford, Jessica R. Williams_**
 
 ## Contact Information
 **_Morgan Bradford [mailto](mailto:morganjbradford95@gmail.com)_**
+**_Kody Gordon [mailto](mailto:gordon.km89@gmail.com)_**
 **_Jessica R. Williams [mailto](mailto:jessicarubinwilliams@gmail.com)_**
