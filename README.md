@@ -51,6 +51,17 @@ Test-5: "It will determine which player's score to increase based off of the cur
 Expect: (game.switchPlayers())toEqual(round: odd number; playerOne.gameScore: 8)
 Expect: (game.switchPlayers())toEqual(round: even number; playerTwo.gameScore: 25)
 
+Test-6: "It will determine the winner when a user game score is greater than or equal to 100"
+Expect: (game.users[1].gameScore >= 100).toEqual(Display.player(winner))
+
+Test-6: "
+
+Test-6: "
+
+Test-6: "
+
+Test-6: "
+
 Describe: User;
 Test-1: "It will create an object to serve as a blueprint for creating a user instances"
 Expect: (new User(FreddieMercury))toEqual(newPlayer = {Name: "FreddieMercury"; Score = 0;})

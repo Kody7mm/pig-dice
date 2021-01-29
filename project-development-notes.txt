@@ -86,3 +86,15 @@ users
   p2
 Tally
 roll
+
+Test-6: "It will determine the winner when a user game score is greater than or equal to 100"
+Expect: (game.users[1].gameScore >= 100).toEqual(Display.player(winner))
+
+Games.prototype.winner = function() {
+  if (game.user[1].gameScore >= 100) {
+    console.log("Player one wins!")
+  } else if (game.user[2].gameScore >= 100) {
+    console.log("Player two wins!")
+  } else {
+    return false
+  }
