@@ -30,11 +30,18 @@ Games.prototype.switchPlayers = function() {
   return this.winner();
 }
 
+// game = {
+//   user: {
+//     game : {
+//       round: 2
+//     }
+//   }
+// }
 Games.prototype.winner = function() {
-  if (game.user[1].gameScore >= 100) {
+  if (game.user[this.round].gameScore >= 100) {
     console.log("Player one wins!")
     return 1;
-  } else if (game.user[2].gameScore >= 100) {
+  } else if (game.user[this.round].gameScore >= 100) {
     console.log("Player two wins!")
     return 2;
   } else {
@@ -69,7 +76,6 @@ User.prototype.hold = function() {
   this.turnScore = 0;
   // return this.gameScore, this.turnScore; // move to UI logic
 };
-
 
 // newUser.tally();
 
